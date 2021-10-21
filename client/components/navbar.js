@@ -17,13 +17,13 @@ class NavBar {
         this.about.innerHTML = 'About';
         this.about.style.color = 'white';
         this.nav.appendChild(this.about);
-        
-        this.login = document.createElement('a');
-        this.login.onclick = () => console.log('login pressed');
-        this.login.innerHTML = 'Login';
-        this.login.style.color = 'white';
-        this.nav.appendChild(this.login);
 
+        this.users = document.createElement('a');
+        this.users.href = '#users';
+        this.users.innerHTML = 'Users';
+        this.users.style.color = 'white';
+        this.nav.appendChild(this.users);
+        
         $('#header').append(this.nav);
         
     }

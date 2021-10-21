@@ -1,3 +1,4 @@
+import { getAllUsers } from "../models/user";
 
 function Home() {
     const APP = $('#app');      // this is how we can grab an element using jquery
@@ -54,6 +55,13 @@ function Home() {
     $('#changeColBtn').click(() => {
         cols[3].innerHTML = 'Changed!';
     })
+
+    async function getUsers() {
+        console.log(await getAllUsers());
+    }
+
+    getUsers();
+    
     
     
     

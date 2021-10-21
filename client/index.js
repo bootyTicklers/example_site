@@ -2,12 +2,14 @@
 import {Home} from "./views/Home.js";
 import {About} from "./views/About.js";
 import { NavBar } from "./components/navbar.js";
+import { Users } from "./views/Users.js";
 
 const nav = new NavBar();
 
 const pages = {
     home: Home,
     about: About,
+    users: Users
 }
 
 function getPageFromURL() {
